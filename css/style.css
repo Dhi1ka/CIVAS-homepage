@@ -51,6 +51,10 @@ p, ul, li {
 .iconSearchBtn {
   margin: 1px 40px auto;
 }
+
+.arrowBtn {
+  margin: -50px 220px auto;
+}
 /* end header sidebar */
 
 .sidebar a {
