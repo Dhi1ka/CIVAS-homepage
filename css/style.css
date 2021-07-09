@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: Archivo, sans-serif;
   background-color: #fff;
@@ -31,12 +35,13 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 100%;
+  height: 80%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
+  margin-top: 140px;
   background-color: #0d58b2;
   overflow-x: hidden;
   transition: 0.5s;
@@ -45,22 +50,20 @@ p, ul, li {
 
 /* header-sidebar */
 .closeBtn {
-  margin: 0 auto;
+  width: 20px;
+  margin: 10px auto;
 }
 
 .iconSearchBtn {
-  margin: 1px 40px auto;
-}
-
-.arrowBtn {
-  margin: -50px 220px auto;
+  width: 20px;
+  margin: 7px 49px auto;
 }
 /* end header sidebar */
 
 .sidebar a {
-  padding: 10px 10px 10px 32px;
+  padding: 10px 10px 10px 48px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 24px;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -97,11 +100,21 @@ header {
 .lang a {
   text-decoration: none;
   padding-left: 15px;
+  color: #000;
+}
+
+.lang a:hover {
+  color: #0d58b2;
 }
 
 .auth a {
   text-decoration: none;
   padding-left: 25px;
+  color: #000;
+}
+
+.auth a:hover {
+  color: #0d58b2;
 }
 
 /* content */
@@ -125,6 +138,20 @@ select {
   height: 34px;
   border-radius: 0;
   padding: 6px;
+  background-image: url(/img/arrow-select180.png);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  background: url(/img/arrow-select.png) 90% / 12% no-repeat;
+  background-position: center right 10px;
+}
+
+.content select:hover {
+  text-decoration: underline;
 }
 
 input {
@@ -154,6 +181,14 @@ button {
 .advance-search {
   text-decoration: none;
   text-align: right;
+}
+
+.advance-search a {
+  color: #000;
+}
+
+.advance-search a:hover {
+  color: #0d58b2;
 }
 
 /* footer */

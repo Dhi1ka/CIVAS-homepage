@@ -1,5 +1,5 @@
 function openSidebar() {
-  document.getElementById("leftSidebar").style.width = "310px";
+  document.getElementById("leftSidebar").style.width = "50%";
 }
 
 function closeSidebar() {
@@ -9,3 +9,7 @@ function closeSidebar() {
 function backSidebar() {
   document.getElementById("leftSidebar").style.width = "0";
 }
+
+// document.querySelector("option").addEventListener("click", (e) => {
+//   console.log(e);
+// });
