@@ -11,5 +11,9 @@ function backSidebar() {
 }
 
 // document.querySelector("option").addEventListener("click", (e) => {
-//   console.log(e);
+//   console.log(e);document.getElementsByTagName("option").style.transition = "0.5s";
 // });
+
+// function openOptions() {
+//   document.querySelectorAll("option").style.transition = "all 0.5s";
+// }

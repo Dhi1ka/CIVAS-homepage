@@ -35,9 +35,9 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 80%;
+  height: 53.8rem;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -153,6 +153,12 @@ select:focus {
 .content select:hover {
   text-decoration: underline;
 }
+
+/* .content select option:hover {
+  background: none;
+  text-decoration: underline;
+  transition: all 1s;
+} */
 
 input {
   font-family: Archivo, sans-serif;
