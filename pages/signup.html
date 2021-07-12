@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIVAS Homepage</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
   <!-- sidebar -->
   <div id="leftSidebar" class="sidebar">
     <div class="header-sidebar">
-      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()"><img src="./img/closeBtn.png" alt="" style="width: 25px;"></a>
-      <a href="javascript:void(0)" class="iconSearchBtn" onclick="openSearch()"><img src="./img/icon-search-white.png" style="width: 25px;" alt=""></a>
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()"><img src="../img/closeBtn.png" alt="" style="width: 25px;"></a>
+      <a href="javascript:void(0)" class="iconSearchBtn" onclick="openSearch()"><img src="../img/icon-search-white.png" style="width: 25px;" alt=""></a>
     </div>
     <ul class="sidebar-list">
       <li class="sidebar-item">
@@ -46,7 +46,7 @@
 
   <!-- header -->
   <header class="header">
-    <a href="index.html"><img src="./img/CIVAS.png" class="img-header" alt=""></a>
+    <a href="../index.html"><img src="../img/CIVAS.png" class="img-header" alt=""></a>
     <div class="right-menu">
       <div class="lang">
         <a href="#id">ID</a>
@@ -55,31 +55,54 @@
       <br>
       <div class="auth">
         <a href="#signin">Sign In</a>
-        <a href="./pages/signup.html">Sign Up</a>
+        <a href="signup.html">Sign Up</a>
       </div>
     </div>
   </header>
-  <span onclick="openSidebar()" style="padding: 50px; cursor: pointer;"><img style="width: 30px;" src="./img/icon-navbar.png" alt=""></span>
+  <span onclick="openSidebar()" style="padding: 50px; cursor: pointer;"><img style="width: 30px;" src="../img/icon-navbar.png" alt=""></span>
   
   <!-- content -->
   <div class="content">
-    <select name="category" id="mainCategory">
-      <option value="all" selected hidden>Semua Kategori</option>
-      <option value="name">Nama</option>
-      <option value="title">Judul</option>
-      <option value="year">Tahun</option>
-      <option value="medium">Medium</option>
-    </select>
-    <div class="search">
-      <form action="#" class="searchForm">
-        <input type="search" placeholder="Cari Arsip....">
-        <button type="submit"><img src="./img/icon-search.png" style="width: 14px;" alt=""></button>
-      </form>
-      <br>
-      <div class="advance-search">
-        <a href="#">Advance Search</a>
+    <h3 style="font-weight: 200; margin-bottom: 12px;">PENDAFTARAN</h3>
+    <hr>
+    <form action="">
+      <label for="name">Nama</label>
+      <div>
+        <input type="text" placeholder="Nama Depan">
+        <input type="text" style="margin-left: 7px;" placeholder="Nama Belakang">
       </div>
-    </div>
+      <label for="organization">Lembaga / Organisasi</label>
+      <div>
+        <input type="text">
+      </div>
+      <label for="phone">No. Telepon</label>
+      <div>
+        <input type="number">
+      </div>
+      <label for="email">Email</label>
+      <div>
+        <input type="email">
+      </div>
+      <label for="password">Password</label>
+      <label for="confirm-password">Ketik Ulang Password</label>
+      <div class="form-password">
+        <input type="password" class="password">
+        <input type="password" style="margin-left: 20px;" class="repeat-password">
+      </div>
+      <br>
+      <div>
+        <input type="checkbox"><label for="cataloger">Cataloger</label>
+        <button style="margin-left: 60px;" class="btnFile" type="button" onclick="browseFile()">Pilih Berkas</button>
+        <input id="inputFile" placeholder="Berkas Tidak Ditemukan">
+      </div>
+      <input type="checkbox"><label for="curator">Curator</label>
+      <br>
+      <br>
+      <input type="checkbox"><label for="agreement">Menyetujui Syarat dan Ketentuan CIVAS</label>
+      <div>
+        <button type="submit" class="regBtn">DAFTAR</button>
+      </div>
+    </form>
   </div>
   
   <!-- footer -->
@@ -95,7 +118,7 @@
       <h4 style="font-size: 13px;">Supported By:</h4>
       <br>
       <div class="footer-right-content">
-        <img src="./img/ITB.png" class="img-footer" alt="">
+        <img src="../img/ITB.png" class="img-footer" alt="">
         <div>
           <ul>
             <li>Program Studi Seni Rupa </li>
@@ -106,6 +129,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
