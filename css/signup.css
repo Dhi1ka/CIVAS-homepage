@@ -148,30 +148,40 @@ input {
   padding: 7px;
 }
 
+input[type="text"]:hover, input[type="number"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  border: 3px solid;
+  height: 33px;
+}
+
 input[type="checkbox"] {
   width: 15px;
   border: 2px solid;
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label::before {
-  background-color: #0d58b2;
+/* input[type="checkbox"]:not(:checked) {
+  opacity: .2;
 }
+
+input[type="checkbox"]:checked {
+  opacity: .6;
+  background-color: #0d58b2;
+} */
 
 label[for="confirm-password"] {
   margin-left: 180px;
 }
 
 label[for="cataloger"] {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 label[for="curator"] {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 label[for="agreement"] {
-  margin-left: 10px;
+  margin: 10px;
   font-size: 10.56px;
 }
 

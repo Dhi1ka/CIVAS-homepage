@@ -24,7 +24,7 @@ function browseFile() {
   input.onchange = _ => {
     let files = Array.from(input.files);
     // console.log(files);
-    document.getElementById("inputFile").innerHTML = files;
+    document.getElementById("inputFile").value = files[0].name;
   };
   input.click();
 }

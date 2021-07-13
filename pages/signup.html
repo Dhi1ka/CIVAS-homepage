@@ -65,40 +65,41 @@
   <div class="content">
     <h3 style="font-weight: 200; margin-bottom: 12px;">PENDAFTARAN</h3>
     <hr>
+    <!-- form -->
     <form action="">
       <label for="name">Nama</label>
       <div>
-        <input type="text" placeholder="Nama Depan">
+        <input type="text" id="name" placeholder="Nama Depan">
         <input type="text" style="margin-left: 7px;" placeholder="Nama Belakang">
       </div>
       <label for="organization">Lembaga / Organisasi</label>
       <div>
-        <input type="text">
+        <input type="text" id="organization">
       </div>
       <label for="phone">No. Telepon</label>
       <div>
-        <input type="number">
+        <input type="number" id="phone">
       </div>
       <label for="email">Email</label>
       <div>
-        <input type="email">
+        <input type="email" id="email">
       </div>
       <label for="password">Password</label>
       <label for="confirm-password">Ketik Ulang Password</label>
       <div class="form-password">
-        <input type="password" class="password">
-        <input type="password" style="margin-left: 20px;" class="repeat-password">
+        <input type="password" id="password">
+        <input type="password" style="margin-left: 20px;" id="confirm-password">
       </div>
       <br>
       <div>
-        <input type="checkbox"><label for="cataloger">Cataloger</label>
+        <input type="checkbox" id="cataloger"><label for="cataloger">Cataloger *</label>
         <button style="margin-left: 60px;" class="btnFile" type="button" onclick="browseFile()">Pilih Berkas</button>
-        <input id="inputFile" placeholder="Berkas Tidak Ditemukan">
+        <input id="inputFile" placeholder="Berkas Tidak Ditemukan" disabled>
       </div>
-      <input type="checkbox"><label for="curator">Curator</label>
+      <input type="checkbox" id="curator"><label for="curator">Curator *</label>
       <br>
       <br>
-      <input type="checkbox"><label for="agreement">Menyetujui Syarat dan Ketentuan CIVAS</label>
+      <input type="checkbox" id="agreement"><label for="agreement">Menyetujui Syarat dan Ketentuan CIVAS</label>
       <div>
         <button type="submit" class="regBtn">DAFTAR</button>
       </div>
