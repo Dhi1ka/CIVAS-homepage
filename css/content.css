@@ -119,10 +119,10 @@ header {
 
 /* content */
 .content {
-  width: 55%;
+  width: 84%;
   height: 100%;
   margin: 10px auto;
-  padding: 70px;
+  padding: 10px;
   align-items: flex-start;
   justify-content: center;
 }

@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 54rem;
+  height: 53.9rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -184,6 +184,10 @@ button {
   background: transparent;
 }
 
+/* [type="search"] {
+  background-image: url(../img/clearBtn.png);
+} */
+
 .advance-search {
   text-decoration: none;
   text-align: right;
@@ -203,17 +207,56 @@ footer {
   background-color: #d0d2d3;
   display: flex;
   margin: auto;
-  padding: 75px;
+  padding: 60px;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer-left p {
-  width: 50%;
+@media screen and (max-width: 768px) {
+  footer {
+    display: grid;
+    margin: auto;
+  }
 }
 
+/* footer left */
+.footer-left p {
+  width: 32%;
+}
+
+.footer-left-menu ul {
+  display: flex;
+  margin: auto;
+}
+
+.footer-left-menu ul li {
+  padding-right: 40px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.footer-left-menu ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #000;
+}
+
+.about-civas {
+  display: flex;
+}
+
+.about-civas-left p {
+  width: 65%;
+}
+
+.about-civas-right {
+  width: 128%;
+  margin-left: -50px;
+}
+
+/* footer right */
 .footer-right {
-  width: 70%;
+  width: 21%;
 }
 
 .footer-right-content {
@@ -225,6 +268,7 @@ footer {
 
 .footer-right-content ul li {
   list-style: none;
+  font-weight: 900;
 }
 
 .img-footer {
