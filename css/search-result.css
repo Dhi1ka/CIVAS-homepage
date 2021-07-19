@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 53.9rem;
+  height: 77.4em;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -119,11 +119,10 @@ header {
 
 /* content */
 .content {
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  margin: 70px auto;
-  padding: 50px;
+  width: 84%;
+  height: 100%;
+  margin: 10px auto;
+  padding: 10px;
   align-items: flex-start;
   justify-content: center;
 }
@@ -132,100 +131,143 @@ header {
   .content {display: grid;}
 }
 
-select {
-  font-family: Archivo, sans-serif;
-  width: 160px;
-  height: 34px;
-  border-radius: 0;
-  padding: 6px;
-  background-image: url(/img/arrow-select180.png);
-  background-repeat: no-repeat;
-  background-position: center right 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+form {
+  margin-top: 65px;
 }
 
-select:focus {
-  background: url(/img/arrow-select.png) 90% / 12% no-repeat;
-  background-position: center right 10px;
+label {
+  font-size: 14.07px;
 }
-
-.content select:hover {
-  text-decoration: underline;
-}
-
-/* .content select option:hover {
-  background: none;
-  text-decoration: underline;
-  transition: all 1s;
-} */
-
-/* .selectCategory {
-  font-family: Archivo, sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  border: 1px solid;
-  color: #000;
-  padding: 8px;
-} */
-
-/* .dropdownCategory {
-  background: orange;
-	visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-	position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-	left: 0;
-  display: none;
-}
-
-.selectCategory:hover > .dropdownCategory:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-} */
 
 input {
   font-family: Archivo, sans-serif;
-  width: 350px;
-  height: 31px;
-  border: none;
+  width: 220px;
+  margin: 5px 0 18px;
   border-radius: 0;
-  outline: none;
+  border: 1px solid;
   padding: 7px;
 }
 
-button {
+[type="text"]:hover, [type="number"]:hover, [type="email"]:hover, [type="password"]:hover {
+  border: 2px solid;
+  height: 31px;
+}
+
+[type="checkbox"]:hover {
+  border: 2px solid;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  margin-left: 2px;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #000;
+}
+
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #0d58b2;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+label[for="confirm-password"] {
+  margin-left: 180px;
+}
+
+label[for="cataloger"] {
+  margin: 10px;
+}
+
+label[for="curator"] {
+  margin: 10px;
+}
+
+label[for="agreement"] {
+  margin: 10px;
+  font-size: 10.56px;
+}
+
+@media screen and (max-width: 500px) {
+  label[for="confirm-password"] {
+    margin: 0 auto;
+  }
+}
+
+.btnFile {
+  width: 128px;
+  height: 30px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid;
+}
+
+.btnFile:active {
+  transform: scale(0.98);
+}
+
+#inputFile {
+  border: 1px solid;
+  height: 30px;
+}
+
+.regBtn {
+  width: 210px;
+  height: 35px;
   border: none;
-  outline: none;
-  border-radius: 0;
-  background: transparent;
+  margin: 20px 100px auto;
+  color: #fff;
+  background: #676767;
   padding: 7px;
   cursor: pointer;
 }
 
-.searchForm {
-  border: 1px #000 solid;
-  background: transparent;
+.regBtn:hover {
+  background-color: #0d58b2;
 }
 
-/* [type="search"] {
-  background-image: url(../img/clearBtn.png);
-} */
-
-.advance-search {
-  text-decoration: none;
-  text-align: right;
-}
-
-.advance-search a {
-  color: #000;
-}
-
-.advance-search a:hover {
-  color: #0d58b2;
+.regBtn:active {
+  transform: scale(0.98);
 }
 
 /* footer */

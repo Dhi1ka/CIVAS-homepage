@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 77.4em;
+  height: 37em;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -252,7 +252,7 @@ label[for="agreement"] {
 }
 
 .regBtn {
-  width: 210px;
+  width: 120px;
   height: 35px;
   border: none;
   margin: 20px 100px auto;

@@ -1,3 +1,4 @@
+// sidebar open close
 function openSidebar() {
   document.getElementById("leftSidebar").style.width = "50%";
 }
@@ -18,6 +19,7 @@ function backSidebar() {
 //   document.querySelectorAll("option").style.transition = "all 0.5s";
 // }
 
+// browse file
 function browseFile() {
   let input = document.createElement('input');
   input.type = 'file';
