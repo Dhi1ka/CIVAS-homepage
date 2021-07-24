@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIVAS Content</title>
   <link rel="shortcut icon" href="../img/favicon-571e8cf92d.png" type="image/x-icon">
+
   <link rel="stylesheet" href="../css/content.css">
 </head>
 <body>
@@ -17,30 +18,39 @@
     </div>
     <ul class="sidebar-list">
       <li class="sidebar-item">
-        <a href="#naskah" class="sidebar-link">Naskah Ilmiah</a>
+        <a href="#koleksi" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-collection">
+          <li class="sidebar-subitem">
+            <a href="#sejarah">Sejarah</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#koleksikhusus">Koleksi Khusus</a>
+          </li>
+        </ul>
       </li>
       <li class="sidebar-item">
-        <a href="#foto" class="sidebar-link">Arsip Foto</a>
+        <a href="#blog" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-blog">
+          <li class="sidebar-subitem">
+            <a href="#kegiatan">Kegiatan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#sorotan">Sorotan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#terbitan">Terbitan</a>
+          </li>
+        </ul>
       </li>
-      <li class="sidebar-item">
-        <a href="#video" class="sidebar-link">Arsip Video</a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#koleksi" class="sidebar-link">Koleksi Spesial</a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#blog" class="sidebar-link">Blog</a>
-      </li>
-      <br>
       <li class="sidebar-item">
         <a href="#tentang" class="sidebar-link">Tentang</a>
       </li>
       <br>
       <li class="sidebar-item">
-        <a href="#instagram" class="sidebar-link">Instagram</a>
+        <a href="#kontak" class="sidebar-link">Kontak</a>
       </li>
       <li class="sidebar-item">
-        <a href="#youtube" class="sidebar-link">YouTube</a>
+        <a href="#menjadianggota" class="sidebar-link">Menjadi Anggota</a>
       </li>
     </ul>
   </div>
@@ -54,6 +64,7 @@
         <a href="#en">EN</a>
       </div>
       <br>
+      <br>
       <div class="auth">
         <a href="#signin">Sign In</a>
         <a href="./signup.html">Sign Up</a>
@@ -65,44 +76,97 @@
   <!-- content -->
   <div class="content">
     <p>Content</p>
-    <h2>Content Title</h2>
-
-    <h4>Image Title</h4>
-
-    <h3>Title</h3>
-    <h3>Year</h3>
-
-    <h3>Category</h3>
-
-    <button type="submit" class="regBtn">Download</button>
+    <br>
+    <h3 style="font-weight: 100;">Content Title</h3>
+    <!-- content carousel -->
+    <div class="carousel">
+      <div class="prev">
+        <a href="#prev"><img src="../img/arrow-left.png" alt=""></a>
+      </div>
+      <div class="item">
+        <img src="../img/box-ex.jpg" alt="">
+        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+      </div>
+      <div class="item">
+        <img src="../img/box-ex.jpg" alt="">
+        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+      </div>
+      <div class="item">
+        <img src="../img/box-ex.jpg" alt="">
+        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+      </div>
+      <div class="next">
+        <a href="#next"><img src="../img/arrow-right.png" alt=""></a>
+      </div>
+    </div>
+    <div class="description-category">
+      <!-- content description -->
+      <div class="description">
+        <div class="title">
+          <h3 style="margin-right: 70px; margin-bottom: 15px; font-weight: 100;">Title</h3>
+          <h3 style="font-weight: 100;">Year</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+          diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+          aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+          nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          ex ea commodo consequat. Duis autem vel eum iriure dolor in
+          hendrerit in vulputate velit esse molestie consequat, vel illum
+          dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+          odio dignissim qui blandit praesent luptatum zzril delenit augue
+          duis dolore te feugait nulla facilisi.
+          Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
+          diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+          aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+          nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+          ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+          diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+        </p>
+        <button type="submit" class="downloadBtn">Download</button>
+      </div>
+      <!-- content category -->
+      <div class="category">
+        <h3 style="font-weight: 100;">Category</h3>
+        <div>
+          <p style="border-bottom: 1px solid #fff;">Artist Name</p>
+          <p style="width: 160px; border-bottom: 1px solid #fff;">Medium / Technique</p>
+          <div style="display: flex; background: none; height: 35px; margin-left: -10px; justify-content: space-between;">
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Content Type</p>
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Status</p>
+          </div>
+          <div style="display: flex; background: none; height: 35px; margin-left: -10px; justify-content: space-between;">
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Edition</p>
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Material</p>
+          </div>
+          <p style="width: 80px; margin-left: 120px; border-bottom: 1px solid #fff;">Dimension</p>
+          <br>
+          <p style="width: 110px; border-bottom: 1px solid #fff;">Source</p>
+          <div style="display: flex; background: none; height: 35px; margin-left: -10px; justify-content: space-between;">
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Directory Digital</p>/ <p style="width: 100px; border-bottom: 1px solid #fff;">Directory Physical</p>
+          </div>
+          
+          <p style="width: 110px; border-bottom: 1px solid #fff;">Source</p>
+          <div style="display: flex; background: none; height: 35px; margin-left: -10px; justify-content: space-between;">
+            <p style="width: 100px; border-bottom: 1px solid #fff;">Event</p><p style="width: 100px; border-bottom: 1px solid #fff;">DD/MM/YYYY</p>
+          </div>
+          
+          <p style="width: 110px; border-bottom: 1px solid #fff;">Depicted Person</p>
+          <p style="width: 100px; border-bottom: 1px solid #fff;">Depicted Place</p>
+        </div>
+      </div>
+    </div>
+    
   </div>
   
   <!-- footer -->
   <footer class="footer">
     <!-- footer left -->
     <div class="footer-left">
-      <div class="footer-left-menu">
-        <ul>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#youtube">YouTube</a>
-          </li>
-          <li>
-            <a href="#instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
       <div class="about-civas">
         <div class="about-civas-left">
-          <h3><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
           <br>
           <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
           <br>
@@ -118,9 +182,25 @@
           <p>civasitb@gmail.com</p>
         </div>
       </div>
-      
       <br>
-      <p style="color: #fff;"><strong>CIVAS</strong> 2021 &copy; All Rights Reserved</p>
+      <div class="footer-social">
+        <p style="color: #fff;"><strong>CIVAS</strong> 2021 &copy; All Rights Reserved</p>
+        <ul>
+          <li>
+            <a href="#facebook">Facebook</a>
+          </li>
+          <li>
+            <a href="#youtube">YouTube</a>
+          </li>
+          <li>
+            <a href="#instagram">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer center -->
+    <div class="footer-center">
+      <img src="../img/alana_logo-01-4-bbb83936e6.png" alt="">
     </div>
     <!-- footer right -->
     <div class="footer-right">
@@ -137,6 +217,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/content.js"></script>
 </body>
 </html>

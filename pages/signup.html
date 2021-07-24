@@ -17,30 +17,39 @@
     </div>
     <ul class="sidebar-list">
       <li class="sidebar-item">
-        <a href="#naskah" class="sidebar-link">Naskah Ilmiah</a>
+        <a href="#koleksi" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-collection">
+          <li class="sidebar-subitem">
+            <a href="#sejarah">Sejarah</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#koleksikhusus">Koleksi Khusus</a>
+          </li>
+        </ul>
       </li>
       <li class="sidebar-item">
-        <a href="#foto" class="sidebar-link">Arsip Foto</a>
+        <a href="#blog" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-blog">
+          <li class="sidebar-subitem">
+            <a href="#kegiatan">Kegiatan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#sorotan">Sorotan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#terbitan">Terbitan</a>
+          </li>
+        </ul>
       </li>
-      <li class="sidebar-item">
-        <a href="#video" class="sidebar-link">Arsip Video</a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#koleksi" class="sidebar-link">Koleksi Spesial</a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#blog" class="sidebar-link">Blog</a>
-      </li>
-      <br>
       <li class="sidebar-item">
         <a href="#tentang" class="sidebar-link">Tentang</a>
       </li>
       <br>
       <li class="sidebar-item">
-        <a href="#instagram" class="sidebar-link">Instagram</a>
+        <a href="#kontak" class="sidebar-link">Kontak</a>
       </li>
       <li class="sidebar-item">
-        <a href="#youtube" class="sidebar-link">YouTube</a>
+        <a href="#menjadianggota" class="sidebar-link">Menjadi Anggota</a>
       </li>
     </ul>
   </div>
@@ -53,6 +62,7 @@
         <a href="#id">ID</a>
         <a href="#en">EN</a>
       </div>
+      <br>
       <br>
       <div class="auth">
         <a href="#signin">Sign In</a>
@@ -111,28 +121,9 @@
   <footer class="footer">
     <!-- footer left -->
     <div class="footer-left">
-      <div class="footer-left-menu">
-        <ul>
-          <li>
-            <a href="#blog">Blog</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#youtube">YouTube</a>
-          </li>
-          <li>
-            <a href="#instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
       <div class="about-civas">
         <div class="about-civas-left">
-          <h3><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
           <br>
           <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
           <br>
@@ -148,9 +139,25 @@
           <p>civasitb@gmail.com</p>
         </div>
       </div>
-      
       <br>
-      <p style="color: #fff;"><strong>CIVAS</strong> 2021 &copy; All Rights Reserved</p>
+      <div class="footer-social">
+        <p style="color: #fff;"><strong>CIVAS</strong> 2021 &copy; All Rights Reserved</p>
+        <ul>
+          <li>
+            <a href="#facebook">Facebook</a>
+          </li>
+          <li>
+            <a href="#youtube">YouTube</a>
+          </li>
+          <li>
+            <a href="#instagram">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer center -->
+    <div class="footer-center">
+      <img src="../img/alana_logo-01-4-bbb83936e6.png" alt="">
     </div>
     <!-- footer right -->
     <div class="footer-right">

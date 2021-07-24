@@ -1,23 +1,30 @@
 // sidebar open close
 function openSidebar() {
   document.getElementById("leftSidebar").style.width = "50%";
-}
+};
 
 function closeSidebar() {
   document.getElementById("leftSidebar").style.width = "0";
-}
+};
 
 function backSidebar() {
   document.getElementById("leftSidebar").style.width = "0";
-}
+};
 
-// document.querySelector("option").addEventListener("click", (e) => {
-//   console.log(e);document.getElementsByTagName("option").style.transition = "0.5s";
-// });
+function openCollection() {
+  document.querySelector(".sidebar-sublist-collection").style.height = "70px";
+  document.querySelector(".sidebar-sublist-collection").style.display = "block";
+  document.querySelector(".dropdown-arrow-collection").style.transform = "rotate(180deg)";
+};
 
-// function openOptions() {
-//   document.querySelectorAll("option").style.transition = "all 0.5s";
-// }
+function openBlog() {
+  document.querySelector(".sidebar-sublist-blog").style.height = "110px";
+  document.querySelector(".sidebar-sublist-blog").style.display = "block";
+  document.querySelector(".dropdown-arrow-blog").style.transform = "rotate(180deg)";
+};
+
+openCollection;
+openBlog;
 
 // browse file
 function browseFile() {
