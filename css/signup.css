@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 76.7rem;
+  height: 76.8rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -89,18 +89,6 @@ p, ul, li {
 
 .sidebar-item a img {
   margin: 20px 0 2px 20px;
-}
-
-.sidebar-sublist-collection {
-  display: none;
-  height: 0;
-  list-style: none;
-}
-
-.sidebar-sublist-blog {
-  display: none;
-  height: 0;
-  list-style: none;
 }
 
 .sidebar-subitem a {

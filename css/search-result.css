@@ -91,18 +91,6 @@ p, ul, li {
   margin: 20px 0 2px 20px;
 }
 
-.sidebar-sublist-collection {
-  display: none;
-  height: 0;
-  list-style: none;
-}
-
-.sidebar-sublist-blog {
-  display: none;
-  height: 0;
-  list-style: none;
-}
-
 .sidebar-subitem a {
   color: #d0d2d3;
 }
