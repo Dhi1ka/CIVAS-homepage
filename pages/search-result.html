@@ -17,7 +17,7 @@
     </div>
     <ul class="sidebar-list">
       <li class="sidebar-item">
-        <a href="#koleksi" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <a href="javascript:void(0)" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
         <ul class="sidebar-sublist-collection">
           <li class="sidebar-subitem">
             <a href="#sejarah">Sejarah</a>
@@ -28,7 +28,7 @@
         </ul>
       </li>
       <li class="sidebar-item">
-        <a href="#blog" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <a href="javascript:void(0)" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
         <ul class="sidebar-sublist-blog">
           <li class="sidebar-subitem">
             <a href="#kegiatan">Kegiatan</a>
@@ -76,38 +76,88 @@
   <div class="content">
     <div class="content-left">
       <p>Search result for</p><br>
-      <h3>Raden saleh</h3>
-      <p>exhibition</p><p>Modern Art</p><p>Journal</p><p>Painting</p>
+      <h3 style="width: 110px; border-bottom: 1px solid;">Raden saleh</h3>
+      <br>
+      <div style="display: flex;">
+        <p style="border: 1px solid;">exhibition</p><p style="border: 1px solid;">Modern Art</p>
+      </div>
+      <div style="display: flex;">
+        <p style="border: 1px solid;">Journal</p><p style="border: 1px solid;">Painting</p>
+      </div>
     </div>
-    <div class="content-right">
-      <hr>
-      <p>Catalogues</p> <img src="../img/arrow-right.png" alt=""><p>Exhibition Catalogue</p>
-      <h3>Pameran Raden saleh</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-      </p>
-      <hr>
-      <p>Catalogues</p> <img src="../img/arrow-right.png" alt=""><p>Exhibition Catalogue</p>
-      <h3>Pameran Raden saleh</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-      </p>
-      <hr>
-      <p>Catalogues</p> <img src="../img/arrow-right.png" alt=""><p>Exhibition Catalogue</p>
-      <h3>Pameran Raden saleh</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-      </p>
-      <hr>
-      <p>Catalogues</p> <img src="../img/arrow-right.png" alt=""><p>Exhibition Catalogue</p>
-      <h3>Pameran Raden saleh</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-      </p>
-      <hr>
-      <a href="#1">1</a>
-      <a href="#2">2</a>
-      <a href="#next">Next</a>
+    <div style="display: grid;">
+      <div class="content-right">
+        <hr>
+        <div style="display: flex;">
+          <div style="padding: 10px;">
+            <img style="width: 100px;" src="../img/img-search-result.png" alt="">
+          </div>
+          <div style="padding: 10px;" class="content-right-result">
+            <div style="display: flex;">
+              <p>Catalogues</p> <img style="margin: 0 5px 0 5px;" src="../img/arrow-right.png" alt=""><p>Exhibition Catalogue</p>
+            </div>
+            <br>
+            <h3>Pameran Raden saleh</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div style="display: flex;">
+          <div style="padding: 10px;">
+            <img style="width: 100px;" src="../img/img-search-result.png" alt="">
+          </div>
+          <br>
+          <div style="padding: 10px;" class="content-right-result">
+            <div style="display: flex;">
+              <p>Artwork</p> <img style="margin: 0 5px 0 5px;" src="../img/arrow-right.png" alt=""><p>Painting</p>
+            </div>
+            <h3>Lukisan Raden saleh</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div style="display: flex;">
+          <div style="padding: 10px;">
+            <img style="width: 100px;" src="../img/img-search-result.png" alt="">
+          </div>
+          <br>
+          <div style="padding: 10px;" class="content-right-result">
+            <div style="display: flex;">
+              <p>Journal</p> <img style="margin: 0 5px 0 5px;" src="../img/arrow-right.png" alt=""><p>Research</p>
+            </div>
+            <h3>Riset Raden saleh</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div style="display: flex;">
+          <div style="padding: 10px;" class="content-right-result">
+            <img style="width: 100px;" src="../img/img-search-result.png" alt="">
+          </div>
+          <br>
+          <div style="padding: 10px;">
+            <div style="display: flex;">
+              <p>Journal</p> <img style="margin: 0 5px 0 5px;" src="../img/arrow-right.png" alt=""><p>Journal</p>
+            </div>
+            <h3>Riset Raden saleh</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+            </p>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="pagination" style="margin-top: 20px;">
+        <a href="#1">1</a>
+        <a href="#2">2</a>
+        <a href="#next">Next</a>
+      </div>
     </div>
   </div>
   
@@ -117,7 +167,7 @@
     <div class="footer-left">
       <div class="about-civas">
         <div class="about-civas-left">
-          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <h3 style="font-weight: 100;"><strong style="font-weight: bold;">CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
           <br>
           <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
           <br>
@@ -155,14 +205,14 @@
     </div>
     <!-- footer right -->
     <div class="footer-right">
-      <h4 style="font-size: 13px;">Supported By:</h4>
+      <h4 style="font-size: 13px; font-weight: bold;">Supported By:</h4>
       <div class="footer-right-content">
         <img src="../img/ITB.png" class="img-footer" alt="">
         <div>
           <ul>
-            <li> <strong>Program Studi Seni Rupa</strong> </li>
-            <li> <strong>Fakultas Seni Rupa dan Desain</strong> </li>
-            <li><strong>Institut Teknologi Bandung</strong> </li>
+            <li> <strong style="font-weight: bold;">Program Studi Seni Rupa</strong> </li>
+            <li> <strong style="font-weight: bold;">Fakultas Seni Rupa dan Desain</strong> </li>
+            <li><strong style="font-weight: bold;">Institut Teknologi Bandung</strong> </li>
           </ul>
         </div>
       </div>

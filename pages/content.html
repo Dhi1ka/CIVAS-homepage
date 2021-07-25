@@ -7,6 +7,7 @@
   <title>CIVAS Content</title>
   <link rel="shortcut icon" href="../img/favicon-571e8cf92d.png" type="image/x-icon">
 
+  <link rel="stylesheet" href="../css/splide.min.css">
   <link rel="stylesheet" href="../css/content.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
     </div>
     <ul class="sidebar-list">
       <li class="sidebar-item">
-        <a href="#koleksi" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <a href="javascript:void(0)" onclick="openCollection()" class="sidebar-link">Koleksi <img class="dropdown-arrow-collection" src="../img/icon_dropdown_white.png" alt=""> </a>
         <ul class="sidebar-sublist-collection">
           <li class="sidebar-subitem">
             <a href="#sejarah">Sejarah</a>
@@ -29,7 +30,7 @@
         </ul>
       </li>
       <li class="sidebar-item">
-        <a href="#blog" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
+        <a href="javascript:void(0)" onclick="openBlog()" class="sidebar-link">Blog <img class="dropdown-arrow-blog" src="../img/icon_dropdown_white.png" alt=""> </a>
         <ul class="sidebar-sublist-blog">
           <li class="sidebar-subitem">
             <a href="#kegiatan">Kegiatan</a>
@@ -79,26 +80,33 @@
     <br>
     <h3 style="font-weight: 100;">Content Title</h3>
     <!-- content carousel -->
-    <div class="carousel">
-      <div class="prev">
-        <a href="#prev"><img src="../img/arrow-left.png" alt=""></a>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img style="margin-bottom: 15px;" src="../img/box-ex.jpg" alt="">
+            <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+          </li>
+          <li class="splide__slide">
+            <img style="margin-bottom: 15px;" src="../img/box-ex.jpg" alt="">
+            <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+          </li>
+          <li class="splide__slide">
+            <img style="margin-bottom: 15px;" src="../img/box-ex.jpg" alt="">
+            <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+          </li>
+          <li class="splide__slide">
+            <img style="margin-bottom: 15px;" src="../img/box-ex.jpg" alt="">
+            <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
+          </li>
+        </ul>
       </div>
-      <div class="item">
-        <img src="../img/box-ex.jpg" alt="">
-        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
-      </div>
-      <div class="item">
-        <img src="../img/box-ex.jpg" alt="">
-        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
-      </div>
-      <div class="item">
-        <img src="../img/box-ex.jpg" alt="">
-        <h4 style="font-weight: 100; text-decoration: underline;">Image Title</h4>
-      </div>
-      <div class="next">
-        <a href="#next"><img src="../img/arrow-right.png" alt=""></a>
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev"><img src="../img/arrow-left.png" alt=""></button>
+        <button class="splide__arrow splide__arrow--next"><img src="../img/arrow-right.png" alt=""></button>
       </div>
     </div>
+
     <div class="description-category">
       <!-- content description -->
       <div class="description">
@@ -217,7 +225,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/splide.min.js"></script>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/content.js"></script>

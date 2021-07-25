@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 52.9rem;
+  height: 73.2rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -164,28 +164,25 @@ header {
 }
 
 /* content carousel */
-.carousel {
+.splide {
   position: relative;
-  width: 70%;
+  width: 65%;
   display: flex;
-  margin: 30px auto 40px;
-  align-items: center;
-  justify-content: space-between;
+  margin: 30px auto 40px 200px;
 }
 
-.carousel .item img {
+.splide .splide__track .splide__list .splide__slide img {
   width: 225px;
   height: 125px;
   padding: 10px;
 }
 
-.carousel .item:hover {
-  border: 1px solid;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .4);
+.splide .splide__track .splide__list .splide__slide:hover {
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, .2);
   transition: all .2s;
 }
 
-.carousel .item h4 {
+.splide .splide__track .splide__list .splide__slide h4 {
   padding: 0 10px 25px;
   font-weight: 100px;
 }

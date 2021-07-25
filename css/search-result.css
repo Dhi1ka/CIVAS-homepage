@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, strong {
   font-family: Acumin, sans-serif;
-  font-weight: bold;
+  font-weight: 100;
 }
 
 p, ul, li {
@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 52.9rem;
+  height: 65.3rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -147,8 +147,9 @@ header {
 
 /* content */
 .content {
+  display: flex;
   width: 80%;
-  height: 140vh;
+  height: 100vh;
   margin: 10px auto;
   padding: 10px;
   align-items: flex-start;
@@ -157,6 +158,44 @@ header {
 
 @media screen and (max-width: 500px) {
   .content {display: grid;}
+}
+
+.content-left {
+  width: 40%;
+  margin-right: 80px;
+}
+
+.content-left div p {
+  margin: 4px;
+  padding: 2px;
+}
+
+.content-left div p:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.content-right {
+  height: 500px;
+  overflow: scroll;
+}
+
+.pagination a {
+  padding: 4px;
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination a:hover {
+  border: 1px solid;
+}
+
+.content-right img {
+  width: 4px;
+}
+
+.content-right-result:hover {
+  background-color: #d0d2d3;
 }
 
 /* footer */

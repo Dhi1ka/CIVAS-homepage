@@ -12,19 +12,32 @@ function backSidebar() {
 };
 
 function openCollection() {
-  document.querySelector(".sidebar-sublist-collection").style.height = "70px";
-  document.querySelector(".sidebar-sublist-collection").style.display = "block";
-  document.querySelector(".dropdown-arrow-collection").style.transform = "rotate(180deg)";
+  var colls = [];
+
+  if(colls) {
+    document.querySelector(".sidebar-sublist-collection").style.height = "70px";
+    document.querySelector(".sidebar-sublist-collection").style.display = "block";
+    document.querySelector(".dropdown-arrow-collection").style.transform = "rotate(180deg)";
+  } else {
+    document.querySelector(".sidebar-sublist-collection").style.height = "0";
+    document.querySelector(".sidebar-sublist-collection").style.display = "none";
+    document.querySelector(".dropdown-arrow-collection").style.transform = "rotate(0deg)";
+  }  
 };
 
 function openBlog() {
-  document.querySelector(".sidebar-sublist-blog").style.height = "110px";
-  document.querySelector(".sidebar-sublist-blog").style.display = "block";
-  document.querySelector(".dropdown-arrow-blog").style.transform = "rotate(180deg)";
-};
+  var blog = [];
 
-openCollection;
-openBlog;
+  if(blog) {
+    document.querySelector(".sidebar-sublist-blog").style.height = "110px";
+    document.querySelector(".sidebar-sublist-blog").style.display = "block";
+    document.querySelector(".dropdown-arrow-blog").style.transform = "rotate(180deg)";
+  } else {
+    document.querySelector(".sidebar-sublist-blog").style.height = "110px";
+    document.querySelector(".sidebar-sublist-blog").style.display = "block";
+    document.querySelector(".dropdown-arrow-blog").style.transform = "rotate(180deg)";
+  }
+};
 
 // browse file
 function browseFile() {
