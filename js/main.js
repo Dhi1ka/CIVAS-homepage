@@ -33,6 +33,12 @@ $(".dropdown-blog-link").click(function () {
   }
 });
 
+// modal toggle
+$('.modal-toggle').on('click', function(e) {
+  e.preventDefault();
+  $('.modal').toggleClass('is-visible');
+});
+
 // browse file
 function browseFile() {
   let input = document.createElement('input');
