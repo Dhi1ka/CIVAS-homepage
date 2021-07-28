@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CIVAS Homepage</title>
-  <link rel="shortcut icon" href="./img/favicon-571e8cf92d.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/favicon-571e8cf92d.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/add-content.css">
 </head>
 <body>
@@ -111,30 +111,40 @@
     <h3>ADD CONTENT</h3>
     <hr>
     <p>Content Details</p>
-    <input type="text" placeholder="Content Title">
-    <input type="text" placeholder="Object Type">
-    <select name="category" id="contentCategory">
-      <option value="category" hidden>Category</option>
-      <option value="art">Karya</option>
-      <option value="catalog">Katalog</option>
-      <option value="poster">Poster</option>
-      <option value="document">Dokumen</option>
-      <option value="documentation">Dokumentasi</option>
-      <option value="manuscript">Naskah Ilmiah</option>
-      <option value="publication">Terbitan</option>
-      <option value="study">Bahan Ajar</option>
-    </select>
-    <input type="text" placeholder="Status">
-    <input type="text" placeholder="Title">
-    <input type="text" placeholder="Artist Name">
-    <input type="date" placeholder="Date and Place">
-    <input type="number" placeholder="Year">
-    <input type="text" placeholder="State / Edition">
-    <input type="text" placeholder="Material">
-    <input type="text" placeholder="Medium / Technique">
-    <input type="text" placeholder="Dimension">
-    <input type="text" placeholder="Digital Directory">
-    <input type="text" placeholder="Physical Directory">
+    <input type="text" placeholder="Content Title*" required>
+    <div>
+      <input type="text" placeholder="Object Type*" required>
+      <select name="category" id="contentCategory" style="margin-left: 8px;" required>
+        <option value="category" hidden>Category*</option>
+        <option value="art">Karya</option>
+        <option value="catalog">Katalog</option>
+        <option value="poster">Poster</option>
+        <option value="document">Dokumen</option>
+        <option value="documentation">Dokumentasi</option>
+        <option value="manuscript">Naskah Ilmiah</option>
+        <option value="publication">Terbitan</option>
+        <option value="study">Bahan Ajar</option>
+      </select>
+      <input type="text" placeholder="Status*" style="margin-left: 8px;" required>
+    </div>
+    <input type="text" placeholder="Title*" required>
+    <input type="text" placeholder="Artist Name*" required>
+    <div>
+      <input type="text" placeholder="Date and Place">
+      <input type="number" placeholder="Year*" style="margin-left: 8px;" required>
+    </div>
+    <div>
+      <input type="text" placeholder="State / Edition">
+      <input type="text" placeholder="Material" style="margin-left: 8px;">
+    </div>
+    <div>
+      <input type="text" placeholder="Medium / Technique">
+      <input type="text" placeholder="Dimension" style="margin-left: 8px;">
+    </div>
+    <div>
+      <input type="text" placeholder="Digital Directory">
+      <input type="text" placeholder="Physical Directory" style="margin-left: 8px;">
+    </div>
     <input type="text" placeholder="Content Source">
     <input type="text" placeholder="Event">
     <input type="text" placeholder="Depicted Person">
@@ -143,10 +153,17 @@
       <option value="works">Related Works</option>
     </select>
     <label for="image">Add Image</label>
-    <input type="file" name="" id="">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
-    <button type="submit">SUBMIT</button>
-    <button type="button">SAVE</button>
+    <div class="addImage">
+      <input class="dottedBox" type="file">
+      <input class="dottedBox" type="file" style="margin-left: 8px;">
+      <input class="dottedBox" type="file" style="margin-left: 8px;">
+      <input type="file" name="" id="">
+    </div>
+    <textarea name="" id="" cols="25" rows="8" placeholder="Description*" required></textarea>
+    <div>
+      <button type="submit">SUBMIT</button>
+      <button type="button">SAVE</button>
+    </div>
   </div>
   
   <!-- footer -->
