@@ -1,11 +1,11 @@
 @font-face {
   font-family: Acumin;
-  src: url(../fonts/AcuminVariableConcept.otf);
+  src: url(../../fonts/AcuminVariableConcept.otf);
 }
 
 @font-face {
   font-family: Archivo;
-  src: url(../fonts/Archivo-VariableFont_wdth\,wght.ttf);
+  src: url(../../fonts/Archivo-VariableFont_wdth\,wght.ttf);
 }
 
 * {
@@ -18,6 +18,12 @@
   outline: none;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Archivo, sans-serif;
   background-color: #fff;
@@ -26,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, strong {
   font-family: Acumin, sans-serif;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 p, ul, li {
@@ -35,7 +41,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 65.3rem;
+  height: 52.9rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -298,11 +304,10 @@ header {
 
 /* content */
 .content {
-  display: flex;
-  width: 80%;
-  height: 100vh;
-  margin: 10px auto;
-  padding: 10px;
+  display: grid;
+  width: 100%;
+  height: 240vh;
+  margin: 50px auto;
   align-items: flex-start;
   justify-content: center;
 }
@@ -311,42 +316,127 @@ header {
   .content {display: grid;}
 }
 
-.content-left {
-  width: 40%;
-  margin-right: 80px;
+.content h3 {
+  font-weight: 100;
 }
 
-.content-left div p {
-  margin: 4px;
-  padding: 2px;
+.content p {
+  margin-top: 20px;
 }
 
-.content-left div p:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.content-right {
-  height: 500px;
-  overflow: scroll;
-}
-
-.pagination a {
-  padding: 4px;
-  text-decoration: none;
-  color: #000;
-}
-
-.pagination a:hover {
+.content input {
+  font-family: Archivo, sans-serif;
+  width: 400px;
+  height: 42px;
+  margin-bottom: 10px;
   border: 1px solid;
+  border-radius: 0;
+  outline: none;
+  padding: 7px;
 }
 
-.content-right img {
-  width: 4px;
+.content div input {
+  width: 170px;
 }
 
-.content-right-result:hover {
-  background-color: #d0d2d3;
+.content div [placeholder="Digital Directory"] {
+  width: 220px;
+}
+
+.content div [placeholder="Physical Directory"] {
+  width: 220px;
+}
+
+.content [placeholder="Event"] {
+  width: 480px;
+}
+
+.content [placeholder="Depicted Person"] {
+  width: 480px;
+}
+
+.content .addImage .dottedBox {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed;
+}
+
+.content select {
+  font-family: Archivo, sans-serif;
+  width: 160px;
+  height: 42px;
+  border-radius: 0;
+  padding: 6px;
+  background-image: url(/img/dropdownArrow.png);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.content select:focus {
+  background: url(/img/dropdownArrow180.png) 90% / 9% no-repeat;
+  background-position: center right 10px;
+}
+
+.content select:hover {
+  text-decoration: underline;
+}
+
+.content [type="file"] {
+  border: none;
+}
+
+.content #relatedWorks {
+  width: 450px;
+  background-image: url(/img/dropdownArrow.png);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.content #relatedWorks:focus {
+  width: 450px;
+  background: url(/img/dropdownArrow180.png) 90% / 3% no-repeat;
+  background-position: center right 10px;
+}
+
+.content textarea {
+  font-family: Archivo, sans-serif;
+  padding: 10px;
+}
+
+.content [type="submit"] {
+  width: 220px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: #676767;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content [type="button"] {
+  width: 180px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  border-radius: 0;
+  background: #676767;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content [type="button"]:hover {
+  background-color: #0d58b2;
+}
+
+.content [type="submit"]:hover {
+  background-color: #0d58b2;
 }
 
 /* footer */

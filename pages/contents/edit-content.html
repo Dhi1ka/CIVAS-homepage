@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIVAS Add Content</title>
+  <link rel="shortcut icon" href="../../img/favicon-571e8cf92d.png" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/contents/add-content.css">
+</head>
+<body>
+  <!-- sidebar -->
+  <div id="leftSidebar" class="sidebar">
+    <div class="header-sidebar">
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeSidebar()"><img src="../../img/closeBtn.png" alt="" style="width: 25px;"></a>
+      <a href="javascript:void(0)" class="iconSearchBtn" onclick="openSearch()"><img src="../../img/icon-search-white.png" style="width: 25px;" alt=""></a>
+    </div>
+    <ul class="sidebar-list">
+      <li class="sidebar-item">
+        <a href="javascript:void(0)" class="dropdown-collection-link">Koleksi <img class="dropdown-arrow-collection rotate" src="../../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-collection">
+          <li class="sidebar-subitem">
+            <a href="#sejarah">Sejarah</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#koleksikhusus">Koleksi Khusus</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar-item">
+        <a href="javascript:void(0)" class="dropdown-blog-link">Blog <img class="dropdown-arrow-blog" src="../../img/icon_dropdown_white.png" alt=""> </a>
+        <ul class="sidebar-sublist-blog">
+          <li class="sidebar-subitem">
+            <a href="#kegiatan">Kegiatan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#sorotan">Sorotan</a>
+          </li>
+          <li class="sidebar-subitem">
+            <a href="#terbitan">Terbitan</a>
+          </li>
+        </ul>
+      </li>
+      <li class="sidebar-item">
+        <a href="#tentang" class="sidebar-link">Tentang</a>
+      </li>
+      <br>
+      <li class="sidebar-item">
+        <a href="#kontak" class="sidebar-link">Kontak</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#menjadianggota" class="sidebar-link">Menjadi Anggota</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- header -->
+  <header class="header">
+    <a href="../../index.html"><img src="../../img/CIVAS.png" class="img-header" alt=""></a>
+    <div class="right-menu">
+      <div class="lang">
+        <a href="#id">ID</a>
+        <a href="#en">EN</a>
+      </div>
+      <br>
+      <br>
+      <div class="auth">
+        <!-- modal signin link -->
+        <a href="#signin" class="modal-toggle">Sign In</a>
+        <!-- the modal -->
+        <div class="modal">
+          <div class="modal-overlay modal-toggle"></div>
+          <div class="modal-wrapper modal-transition">
+            <!-- modal header -->
+            <div class="modal-header">
+              <button class="modal-close modal-toggle"><img src="../../img/closeModal.png" alt=""></button>
+              <h2 class="modal-heading">SIGN IN</h2>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <div class="modal-content">
+                <h4 style="font-weight: 100; text-align: center;">Please sign in to your CIVAS account below.</h4>
+                <br>
+                <p>Note: If you have already registered for a CIVAS account, please use the email address and the password you created when you registered.</p>
+                <br>
+                <label for="email">EMAIL*</label><input id="email" type="email">
+                <br>
+                <label for="password">PASSWORD*</label><input id="password" type="password">
+                <input type="submit" value="SUBMIT">
+              </div>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <p>If you have forgotten your password, you can reset it <a href="#">here</a>.</p>
+              <br>
+              <br>
+              <h3 style="font-weight: 100;">Don’t have an account yet ?</h3>
+              <br>
+              <p>Click <a href="../signup.html">here</a>. to Sign Up</p>
+            </div>
+          </div>
+        </div>
+        <a href="../signup.html">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  <span onclick="openSidebar()" style="padding: 50px; cursor: pointer;"><img style="width: 30px;" src="../../img/icon-navbar.png" alt=""></span>
+  
+  <!-- content -->
+  <div class="content">
+    <h3>ADD CONTENT</h3>
+    <hr>
+    <p>Content Details</p>
+    <input type="text" placeholder="Content Title*" value="Poster Pameran GRUP 18" required>
+    <div>
+      <input type="text" placeholder="Object Type*" value="Keduanya" required>
+      <select name="category" id="contentCategory" style="margin-left: 8px;" required>
+        <option value="category" hidden>Category*</option>
+        <option value="art">Karya</option>
+        <option value="catalog">Katalog</option>
+        <option value="poster" selected>Poster</option>
+        <option value="document">Dokumen</option>
+        <option value="documentation">Dokumentasi</option>
+        <option value="manuscript">Naskah Ilmiah</option>
+        <option value="publication">Terbitan</option>
+        <option value="study">Bahan Ajar</option>
+      </select>
+      <input type="text" placeholder="Status*" value="NON-AKUISISI" style="margin-left: 8px;" required>
+    </div>
+    <input type="text" placeholder="Title*" value="Pameran GRUP 18" required>
+    <input type="text" placeholder="Artist Name*" required>
+    <div>
+      <input type="text" placeholder="Date and Place">
+      <input type="number" placeholder="Year*" value="1971" style="margin-left: 8px;" required>
+    </div>
+    <div>
+      <input type="text" placeholder="State / Edition">
+      <input type="text" placeholder="Material" style="margin-left: 8px;">
+    </div>
+    <div>
+      <input type="text" placeholder="Medium / Technique">
+      <input type="text" placeholder="Dimension" style="margin-left: 8px;">
+    </div>
+    <div>
+      <input type="text" placeholder="Digital Directory" value="SR ITB_Poster">
+      <input type="text" placeholder="Physical Directory" value="C3/ 01" style="margin-left: 8px;">
+    </div>
+    <input type="text" placeholder="Content Source" value="Koleksi Galeri Soemardja">
+    <input type="text" placeholder="Event" value="Pameran GRUP 18">
+    <input type="text" placeholder="Depicted Person" value="Mochtar Apin, But Muchtar, G.Sidharta, Kaboel Suadi, Rita Widagdo, Haryadi Suadi, Erna Pirous, Umi">
+    <input type="text" placeholder="Depicted Place" value="Taman Ismail Marzuki. Jakarta">
+    <select name="works" id="relatedWorks">
+      <option value="works">Related Works</option>
+    </select>
+    <label for="image">Add Image</label>
+    <div class="addImage">
+      <input class="dottedBox" type="file">
+      <input class="dottedBox" type="file" style="margin-left: 8px;">
+      <input class="dottedBox" type="file" style="margin-left: 8px;">
+      <input type="file" name="" id="">
+    </div>
+    <textarea name="" id="" cols="25" rows="8" placeholder="Description*" required>Poster pameran dosen-dosen SR ITB tergabung dalam GRUP 18</textarea>
+    <div>
+      <button type="submit">SUBMIT</button>
+      <button type="button">SAVE</button>
+    </div>
+  </div>
+  
+  <!-- footer -->
+  <footer class="footer">
+    <!-- footer left -->
+    <div class="footer-left">
+      <div class="about-civas">
+        <div class="about-civas-left">
+          <h3 style="font-weight: 100;"><strong>CIVAS</strong> | Center for <br> Indonesian Visual Art Studies</h3>
+          <br>
+          <p>Initiated by the Aesthetics & the Sciences of Art Research Group (ASARG), Faculty of Art and Design, Bandung Institute of Technology.</p>
+          <br>
+        </div>
+        <div class="about-civas-right">
+          <p>Fakultas Seni Rupa dan Desain</p>
+          <p>Institut Teknologi Bandung</p>
+          <p>Jl. Ganesha 10, Kota Bandung</p>
+          <p>Jawa Barat, Indonesia</p>
+          <p>40132</p>
+          <br>
+          <p>+22 - 2534104</p>
+          <p>civasitb@gmail.com</p>
+        </div>
+      </div>
+      <br>
+      <div class="footer-social">
+        <p style="color: #fff;"><strong>CIVAS</strong> 2021 &copy; All Rights Reserved</p>
+        <ul>
+          <li>
+            <a href="#facebook">Facebook</a>
+          </li>
+          <li>
+            <a href="#youtube">YouTube</a>
+          </li>
+          <li>
+            <a href="#instagram">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- footer center -->
+    <div class="footer-center">
+      <img src="../../img/alana_logo-01-4-bbb83936e6.png" alt="">
+    </div>
+    <!-- footer right -->
+    <div class="footer-right">
+      <h4 style="font-size: 13px;">Supported By:</h4>
+      <div class="footer-right-content">
+        <img src="../../img/ITB.png" class="img-footer" alt="">
+        <div>
+          <ul>
+            <li> <strong>Program Studi Seni Rupa</strong> </li>
+            <li> <strong>Fakultas Seni Rupa dan Desain</strong> </li>
+            <li><strong>Institut Teknologi Bandung</strong> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/jquery-3.6.0.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -224,6 +224,7 @@ header {
   color: #000;
   background: none;
   border: 0;
+  cursor: pointer;
 }
 
 .modal-close img {

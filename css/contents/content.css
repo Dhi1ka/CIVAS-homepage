@@ -1,11 +1,11 @@
 @font-face {
   font-family: Acumin;
-  src: url(../fonts/AcuminVariableConcept.otf);
+  src: url(../../fonts/AcuminVariableConcept.otf);
 }
 
 @font-face {
   font-family: Archivo;
-  src: url(../fonts/Archivo-VariableFont_wdth\,wght.ttf);
+  src: url(../../fonts/Archivo-VariableFont_wdth\,wght.ttf);
 }
 
 * {
@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, strong {
   font-family: Acumin, sans-serif;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 p, ul, li {
@@ -35,7 +35,7 @@ p, ul, li {
 
 /* sidebar */
 .sidebar {
-  height: 65.3rem;
+  height: 73.2rem;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -298,9 +298,8 @@ header {
 
 /* content */
 .content {
-  display: flex;
   width: 80%;
-  height: 100vh;
+  height: 120vh;
   margin: 10px auto;
   padding: 10px;
   align-items: flex-start;
@@ -311,43 +310,106 @@ header {
   .content {display: grid;}
 }
 
-.content-left {
-  width: 40%;
-  margin-right: 80px;
+.content .top-content {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.content-left div p {
-  margin: 4px;
-  padding: 2px;
+.content .top-content div {
+  display: flex;
 }
 
-.content-left div p:hover {
-  background-color: #000;
+.content .top-content div .editBtn {
+  width: 120px;
+  height: 35px;
+  border: none;
+  font-size: 14px;
   color: #fff;
+  background: #676767;
+  padding: 9px 19px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.content-right {
-  height: 500px;
+.content .top-content div .editBtn:hover {
+  background-color: #0d58b2;
+}
+
+.content .description-category {
+  display: flex;
+}
+
+/* content carousel */
+.splide {
+  position: relative;
+  width: 65%;
+  display: flex;
+  margin: 30px auto 40px 200px;
+}
+
+.splide .splide__track .splide__list .splide__slide img {
+  width: 225px;
+  height: 125px;
+  padding: 10px;
+}
+
+.splide .splide__track .splide__list .splide__slide:hover {
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, .2);
+  transition: all .2s;
+}
+
+.splide .splide__track .splide__list .splide__slide h4 {
+  padding: 0 10px 25px;
+  font-weight: 100px;
+}
+
+/* content description */
+.description {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.description .title {
+  display: flex;
+}
+
+.description p {
+  height: 200px;
   overflow: scroll;
 }
 
-.pagination a {
-  padding: 4px;
-  text-decoration: none;
-  color: #000;
+.downloadBtn {
+  width: 120px;
+  height: 35px;
+  border: none;
+  margin: 50px auto;
+  color: #fff;
+  background: #676767;
+  padding: 7px;
+  cursor: pointer;
 }
 
-.pagination a:hover {
-  border: 1px solid;
+.downloadBtn:hover {
+  background-color: #0d58b2;
 }
 
-.content-right img {
-  width: 4px;
+.downloadBtn:active {
+  transform: scale(0.98);
 }
 
-.content-right-result:hover {
+/* .content category */
+.category {
+  width: 35%;
+}
+.category div{
+  width: 240px;
+  height: 300px;
   background-color: #d0d2d3;
+  padding: 10px;
 }
+/* end of content */
 
 /* footer */
 footer {
